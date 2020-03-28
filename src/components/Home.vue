@@ -17,14 +17,16 @@
         <b-list-group-item href="#some-link">Onibus</b-list-group-item>
         <b-list-group-item href="#">Metro</b-list-group-item>
         <b-list-group-item href="#">Trem</b-list-group-item>
-        <b-list-group-item href="#foobar" disabled>Transporte Aquaviario</b-list-group-item>
+        <b-list-group-item href="#foobar" >Transporte Aquaviario</b-list-group-item>
       </b-list-group>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style>

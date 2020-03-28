@@ -9,10 +9,10 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item @click="home" href="#">Menu Principal</b-nav-item>
-        <b-nav-item href="#">Sobre o Evento</b-nav-item>
         <b-nav-item @click="pontosTuristicos" href="#">Pontos Turisticos</b-nav-item>
         <b-nav-item @click="ondeComer" href="#">Onde comer?</b-nav-item>
-        <b-nav-item href="#">Contato</b-nav-item>
+        <b-nav-item @click="sugestao" href="#">Sugestões</b-nav-item>
+        
 
         
         
@@ -54,6 +54,9 @@ export default {
         },
         ondeComer(){
           this.$router.push({name: "onde-comer"})
+        },
+         sugestao(){
+          this.$router.push({name: "sugestao"})
         },
 
       }

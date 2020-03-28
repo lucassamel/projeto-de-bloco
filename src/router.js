@@ -2,6 +2,7 @@ import VueRouter from 'vue-router';
 import Home from './components/Home'
 import PontosTuristicos from './components/PontosTuristicos'
 import OndeComer from './components/OndeComer'
+import Sugestao from './components/Sugestao'
 
 export default new VueRouter({
     mode: 'history',
@@ -20,6 +21,11 @@ export default new VueRouter({
             path: '/onde-comer',
             name: 'onde-comer',
             component: OndeComer
+        },
+        {
+            path: '/sugestao',
+            name: 'sugestao',
+            component: Sugestao
         },
       
     ]
