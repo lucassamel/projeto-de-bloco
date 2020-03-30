@@ -1,27 +1,30 @@
 <template>
   <div>
-    <div v-for="i in comment" :key="i.id">
-      <h2 class="centro">Sugestões</h2>
-      <b-card bg-variant="light" text-variant="black" title: {{i.name}}>
-        <b-card-text>{{i.body}}</b-card-text>
+    <h2 class="centro">Sugestões</h2>
+    <div v-for="i in allComments" :key="i.id">      
+      <b-card bg-variant="light" text-variant="black" >
+        <b-card-text>Nome: {{i.nome}} </b-card-text>
+        <p>Comentario: {{i.comentario}} </p>
+        <p>Assunto: {{i.assunto}} </p>
       </b-card>
+      <br>
     </div>
+    <AddComentario/>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import AddComentario from './AddComentario'
+import { mapGetters } from "vuex";
 
 export default {
   name: "Comments",
-  components: {},
-  methods: {
-    ...mapActions(["getComments", "deleteComment"])
+  components: {
+    AddComentario
   },
-  computed: mapGetters(["comment"]),
-  created() {
-    this.getComments();
-  }
+ 
+  computed: mapGetters(["allComments"]),
+ 
 };
 </script>
 

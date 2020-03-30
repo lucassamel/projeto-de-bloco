@@ -1,12 +1,13 @@
 import Vuex from "vuex";
 import Vue from "vue";
-import sugestao from './modules/sugestao.js'
+import comments from './modules/comments'
+
 
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  modules: {
-    sugestao
-  }
-});
+    modules: {
+      comments
+    }
+  });
