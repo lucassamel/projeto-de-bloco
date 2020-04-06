@@ -6,7 +6,11 @@
         <b-card-text>Nome: {{i.nome}} </b-card-text>
         <p>Comentario: {{i.comentario}} </p>
         <p>Assunto: {{i.assunto}} </p>
+        <b-button size="sm" class="mb-2" variant="danger">
+          <b-icon @click="deleteComment(i.id)" icon="trash" ></b-icon> 
+        </b-button>
       </b-card>
+      
       <br>
     </div>
     <AddComentario/>
@@ -15,7 +19,7 @@
 
 <script>
 import AddComentario from './AddComentario'
-import { mapGetters } from "vuex";
+import { mapGetters,mapActions } from "vuex";
 
 export default {
   name: "Comments",
@@ -24,6 +28,13 @@ export default {
   },
  
   computed: mapGetters(["allComments"]),
+  created() {
+    this.getComments();
+  },
+
+  methods:{
+    ...mapActions(["getComments","deleteComment"]),
+  }
  
 };
 </script>

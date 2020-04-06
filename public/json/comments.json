@@ -1,0 +1,25 @@
+{
+"comments": [
+    {
+      "id": 1,
+      "nome": "Lucas Samel",
+      "email": "lucas.samel@gmail.com",
+      "comentario": "Ótimo site! Me ajudou a encontrar bons locais para comer.",
+      "assunto": "Outros"
+    },
+    {
+      "id": 2,
+      "nome": "Lucas Samel",
+      "email": "lucas.samel@gmail.com",
+      "comentario": "Ótimo site! Me ajudou a encontrar bons locais para comer.",
+      "assunto": "Outros"
+    },
+    {
+      "id": 3,
+      "nome": "Lucas Samel",
+      "email": "lucas.samel@gmail.com",
+      "comentario": "Ótimo site! Me ajudou a encontrar bons locais para comer.",
+      "assunto": "Outros"
+    }
+  ]
+}

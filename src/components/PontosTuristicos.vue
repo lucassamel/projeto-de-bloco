@@ -1,57 +1,113 @@
 <template>
-  <div class="centro">
-    <h2>Pontos Turisticos</h2>
+  <div>
     <div>
+      <h2 class="centro">Pontos Turisticos</h2>
+      <b-card-group deck>
       <b-card
-        overlay
-        img-src="https://picsum.photos/900/250/?image=3"
-        img-alt="Card Image"
-        text-variant="white"
-        title="Image Overlay"
-        sub-title="Subtitle"
-        class="imagens"
-      >
-        <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-      </b-card>
-    </div>
-    <div>
+    title="Bondinho Pão de Açúcar"
+    img-src="https://www.viajali.com.br/wp-content/uploads/2016/08/pao-de-acucar-rio-de-janeiro-730x486.jpg"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      O Bondinho do Pão de Açúcar é um teleférico localizado no bairro da Urca, 
+      no município do Rio de Janeiro, no estado do Rio de Janeiro, no Brasil.
+       Liga a Praia Vermelha ao Morro da Urca e ao Morro do Pão de Açúcar. 
+       É uma das principais atrações turísticas da cidade
+    </b-card-text>   
+    <a href="https://www.bondinho.com.br/" target="_blank">Saiba mais</a>
+  </b-card>
+  
+  <b-card
+    title="Cristo Redentor"
+    img-src="data:image/jpeg;base64,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"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      Cristo Redentor é uma estátua art déco que retrata Jesus Cristo, localizada no topo do morro do Corcovado, a 709 metros acima do nível do mar, no Parque Nacional da Tijuca, com vista para a maior parte da cidade do Rio de Janeiro, Brasil. 
+      Em 2007 foi eleito informalmente como uma das sete maravilhas do mundo moderno.
+    </b-card-text>  
+    <a href="https://cristoredentoroficial.com.br/" target="_blank">Saiba mais</a> 
+  </b-card>
+
+  <b-card
+    title="Santa Teresa"
+    img-src="https://www.viajali.com.br/wp-content/uploads/2016/08/santa-teresa-rio-de-janeiro.jpg"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      Santa Teresa é um dos bairros mais queridinhos dos cariocas, perfeito para passar uma deliciosa tarde na cidade.
+       Além de contar com vistas belíssimas, devido à sua localização no alto de uma serra, o bairro remete ao “Rio de Janeiro antigo”, com seu ar bucólico, bastante cultura, além dos bondinhos – sua marca registrada.
+
+    </b-card-text>   
+    <a href="http://visit.rio/editorial/tourlapaesanta/" target="_blank">Saiba mais</a>  
+  </b-card>
+      </b-card-group>
+
+      <b-card-group deck>
       <b-card
-        overlay
-        img-src="https://picsum.photos/900/250/?image=3"
-        img-alt="Card Image"
-        text-variant="white"
-        title="Image Overlay"
-        sub-title="Subtitle"
-        class="imagens"
-      >
-        <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-      </b-card>
-    </div>
-    <div>
-      <b-card
-        overlay
-        img-src="https://picsum.photos/900/250/?image=3"
-        img-alt="Card Image"
-        text-variant="white"
-        title="Image Overlay"
-        sub-title="Subtitle"
-        class="imagens"
-      >
-        <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-      </b-card>
-    </div>
-    <div>
-      <b-card
-        overlay
-        img-src="https://picsum.photos/900/250/?image=3"
-        img-alt="Card Image"
-        text-variant="white"
-        title="Image Overlay"
-        sub-title="Subtitle"
-        class="imagens"
-      >
-        <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
-      </b-card>
+    title="Estádio do Maracanã"
+    img-src="https://www.viajali.com.br/wp-content/uploads/2016/08/estadio-maracana-rio-de-janeiro.jpg"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      Conhecer o Estádio do Maracanã é praticamente um passeio imperdível na cidade, principalmente se você é fã de futebol. Após passar por uma reforma, ele foi reaberto em abril de 2013 e se tornou um destino cultural e turístico, 
+      recebendo visitantes até mesmo em dias que não acontecem jogos ou shows.
+    </b-card-text>   
+    <a href="https://www.tourmaracana.com.br/" target="_blank">Saiba mais</a>  
+  </b-card>
+  
+  <b-card
+    title="Biblioteca Nacional do Brasil"
+    img-src="https://www.viajali.com.br/wp-content/uploads/2016/08/biblioteca-nacional-rj.jpg"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      A Biblioteca Nacional abriu as portas em 1910 e hoje é considerada a maior biblioteca da América 
+      Latina e a oitava do mundo, com um acervo de mais de dez milhões de obras. Para quem se interessar, 
+      são oferecidas visitas guiadas com 40 minutos de duração.
+    </b-card-text>   
+    <a href="https://www.bn.gov.br/" target="_blank">Saiba mais</a>  
+  </b-card>
+
+  <b-card
+    title="Teatro Municipal"
+    img-src="https://www.viajali.com.br/wp-content/uploads/2016/08/teatro-municipal-rio-de-janeiro.jpg"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
+    <b-card-text>
+      Localizado na região da Cinelândia, centro do Rio de Janeiro, o Teatro Municipal 
+      foi inspirado na Ópera de Paris e inaugurado em 1909, com colunas e escadarias de mármore, 
+      além de diversas esculturas e vitrais marcantes importados da Europa.       
+    </b-card-text>  
+    <a href="http://www.theatromunicipal.rj.gov.br/" target="_blank">Saiba mais</a>    
+  </b-card>
+      </b-card-group>
+
+
     </div>
   </div>
 </template>
@@ -72,5 +128,13 @@ export default {};
 
 .imagens {
   margin: 24px;
+  max-width:900px;
+  max-height:250px;
+  width: auto;
+  height: auto;
+}
+
+.colunas {
+   width: 33.33%;
 }
 </style>

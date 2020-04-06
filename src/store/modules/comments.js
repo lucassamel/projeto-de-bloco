@@ -1,29 +1,7 @@
 import axios from "axios";
 
 const state = {
-  comments: [
-    {
-      "id": 1,
-      "nome": "Lucas Samel",
-      "email": "lucas.samel@gmail.com",
-      "comentario": "Ótimo site! Me ajudou a encontrar bons locais para comer.",
-      "assunto": "Outros"
-    },
-    {
-      "id": 2,
-      "nome": "Lucas Samel",
-      "email": "lucas.samel@gmail.com",
-      "comentario": "Ótimo site! Me ajudou a encontrar bons locais para comer.",
-      "assunto": "Outros"
-    },
-    {
-      "id": 3,
-      "nome": "Lucas Samel",
-      "email": "lucas.samel@gmail.com",
-      "comentario": "Ótimo site! Me ajudou a encontrar bons locais para comer.",
-      "assunto": "Outros"
-    },
-  ]
+  comments: []
 };
 
 const getters = {
@@ -31,11 +9,10 @@ const getters = {
 };
 
 const actions = {
+
   getComments({ commit }) {
-    axios.get(
-      this.state
-    ).then((response) => {
-      commit('getComments', response.data);
+    axios.get("./json/comments.json").then((response) => {
+      commit('getComments', response.data.comments);
     });
   },
 
@@ -49,11 +26,17 @@ const actions = {
       "assunto":new_comment.assunto,
     }
     commit("addComment", response);
-  }
+  },
+  deleteComment({ commit }, id) {
+    commit("removeComment", id);
+  },
 };
 const mutations = {
+  
   getComments: (state, comments) => (state.comments = comments),
   addComment: (state, new_comment) => state.comments.push(new_comment),
+  removeComment: (state, id) =>
+    (state.comments = state.comments.filter(t => t.id !== id)),
 };
 
 export default {

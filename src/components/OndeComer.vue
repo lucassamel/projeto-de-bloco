@@ -50,14 +50,13 @@
 
       <b-card-group deck>
         <b-card
-          title="Title"
-          img-src="https://picsum.photos/300/300/?image=41"
+          title="Marius Degustare"
+          img-src="https://marius.com.br/imagens/galeria/paella.jpg"
           img-alt="Image"
           img-top
         >
           <b-card-text>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
-            This content is a little bit longer.
+            O Marius Degustare foi eleito o 4º entre os 10 melhores restaurantes sofisticado do Brasil e o 8º, entre os 25 melhores da América do Sul, pelo prêmio Travellers Choice edição 2018.
           </b-card-text>
           <template v-slot:footer>
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -65,26 +64,25 @@
         </b-card>
 
         <b-card
-          title="Title"
-          img-src="https://picsum.photos/300/300/?image=41"
+          title="Pérgula"
+          img-src="https://img.stpu.com.br/?img=https://s3.amazonaws.com/pu-mgr/default/a0R6f00001KyQ21EAF/5e1e30fce4b0830c8eadd205.jpg&w=710&h=462"
           img-alt="Image"
           img-top
         >
-          <b-card-text>This card has supporting text below as a natural lead-in to additional content.</b-card-text>
+          <b-card-text>Reservas, Mesas ao ar livre, Lugares para sentar, Estacionamento disponível, Estacionamento com manobrista, Cadeiras para bebês, Acesso para cadeirantes, Serve bebida alcoólica, Bar completo, Wi-fi gratuito, Aceita cartão de crédito, Serviço de mesa</b-card-text>
           <template v-slot:footer>
             <small class="text-muted">Last updated 3 mins ago</small>
           </template>
         </b-card>
 
         <b-card
-          title="Title"
-          img-src="https://picsum.photos/300/300/?image=41"
+          title="Bangalo Restaurante"
+          img-src="https://media-cdn.tripadvisor.com/media/photo-s/0f/83/cc/f4/bangalo.jpg"
           img-alt="Image"
           img-top
         >
           <b-card-text>
-            This is a wider card with supporting text below as a natural lead-in to additional content.
-            This card has even longer content than the first to show that equal height action.
+            Para levar, Reservas, Mesas ao ar livre, Lugares para sentar, Estacionamento na rua, Acesso para cadeirantes, Serve bebida alcoólica, Vinho e cerveja, Aceita American Express, Aceita MasterCard, Aceita Visa, Serviço de mesa, Estacionamento disponível, Televisão, Cadeiras para bebês, Bar completo, Wi-fi gratuito, Música ao vivo
           </b-card-text>
           <template v-slot:footer>
             <small class="text-muted">Last updated 3 mins ago</small>
